@@ -1,7 +1,7 @@
 describe('Function API:', function () {
     describe('#debounce()', function () {
-        const debounce = outils.debounce
-        it(`outils.debounce(200,function(){return true}) should return true`, function (done) {
+        const debounce = escodes.debounce
+        it(`escodes.debounce(200,function(){return true}) should return true`, function (done) {
             let num = 0
             let interval = null
             let debounced = debounce(500, function () {
@@ -18,7 +18,7 @@ describe('Function API:', function () {
             }, 800)
         })
 
-        it(`outils.debounce(200,true,function(){return true}) should return true`, function (done) {
+        it(`escodes.debounce(200,true,function(){return true}) should return true`, function (done) {
             let num = 0
             let interval = null
             let debounced = debounce(500, function () {
@@ -37,9 +37,9 @@ describe('Function API:', function () {
     });
 
     describe('#throttle()', function () {
-        const throttle = outils.throttle
+        const throttle = escodes.throttle
 
-        it(`outils.throttle(200, function(){return true}) should return true`, function (done) {
+        it(`escodes.throttle(200, function(){return true}) should return true`, function (done) {
             let num = 0
             let interval = null
             let throttled = throttle(200, function () {
@@ -56,7 +56,7 @@ describe('Function API:', function () {
             }, 805)
         })
 
-        it(`outils.throttle(200, function(){return true}) should return true`, function (done) {
+        it(`escodes.throttle(200, function(){return true}) should return true`, function (done) {
             let num = 0
             let interval = null
             let throttled = throttle(200, true, function () {

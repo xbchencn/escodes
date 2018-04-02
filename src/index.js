@@ -1,53 +1,54 @@
 /**
  * @desc webpack打包入口文件
  */
-const arrayEqual = require('./array/arrayEqual')
 
-const addClass = require('./class/addClass')
-const hasClass = require('./class/hasClass')
-const removeClass = require('./class/removeClass')
+import arrayEqual from './array/arrayEqual'
 
-const getCookie = require('./cookie/getCookie')
-const removeCookie = require('./cookie/removeCookie')
-const setCookie = require('./cookie/setCookie')
+import addClass from './class/addClass'
+import hasClass from './class/hasClass'
+import removeClass from './class/removeClass'
 
-const getOS = require('./device/getOS')
-const getExplore = require('./device/getExplore')
+import getCookie from './cookie/getCookie'
+import removeCookie from './cookie/removeCookie'
+import setCookie from './cookie/setCookie'
 
-const getScrollTop = require('./dom/getScrollTop')
-const offset = require('./dom/offset')
-const scrollTo = require('./dom/scrollTo')
-const setScrollTop = require('./dom/setScrollTop')
-const windowResize = require('./dom/windowResize')
+import getOS from './device/getOS'
+import getExplore from './device/getExplore'
 
-const debounce = require('./function/debounce')
-const throttle = require('./function/throttle')
+import getScrollTop from './dom/getScrollTop'
+import offset from './dom/offset'
+import scrollTo from './dom/scrollTo'
+import setScrollTop from './dom/setScrollTop'
+import windowResize from './dom/windowResize'
 
-const getKeyName = require('./keycode/getKeyName')
+import debounce from './function/debounce'
+import throttle from './function/throttle'
 
-const deepClone = require('./object/deepClone')
-const isEmptyObject = require('./object/isEmptyObject')
+import getKeyName from './keycode/getKeyName'
 
-const randomColor = require('./random/randomColor')
-const randomNum = require('./random/randomNum')
+import deepClone from './object/deepClone'
+import isEmptyObject from './object/isEmptyObject'
 
-const isEmail = require('./regexp/isEmail')
-const isIdCard = require('./regexp/isIdCard')
-const isPhoneNum = require('./regexp/isPhoneNum')
-const isUrl = require('./regexp/isUrl')
+import randomColor from './random/randomColor'
+import randomNum from './random/randomNum'
 
-const digitUppercase = require('./string/digitUppercase')
+import isEmail from './regexp/isEmail'
+import isIdCard from './regexp/isIdCard'
+import isPhoneNum from './regexp/isPhoneNum'
+import isUrl from './regexp/isUrl'
 
-const isSupportWebP = require('./support/isSupportWebP')
+import digitUppercase from './string/digitUppercase'
 
-const formatPassTime = require('./time/formatPassTime')
-const formatRemainTime = require('./time/formatRemainTime')
+import isSupportWebP from './support/isSupportWebP'
 
-const parseQueryString = require('./url/parseQueryString')
-const stringfyQueryString = require('./url/stringfyQueryString')
+import formatPassTime from './time/formatPassTime'
+import formatRemainTime from './time/formatRemainTime'
+
+import parseQueryString from './url/parseQueryString'
+import stringfyQueryString from './url/stringfyQueryString'
 
 
-module.exports = {
+export default {
     arrayEqual,
 
     addClass,

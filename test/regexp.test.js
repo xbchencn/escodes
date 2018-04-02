@@ -1,50 +1,50 @@
 describe('Regexp API:', function () {
 
     describe('#isEmail()', function () {
-        it('outils.isEmail("leiquanlive.com") should return false ', function () {
-            assert.notEqual(outils.isEmail("leiquanlive.com"))
+        it('escodes.isEmail("leiquanlive.com") should return false ', function () {
+            assert.notEqual(escodes.isEmail("leiquanlive.com"))
         });
-        it('outils.isEmail("leiquan@live.com") should return true ', function () {
-            assert(outils.isEmail("leiquan@live.com"))
+        it('escodes.isEmail("leiquan@live.com") should return true ', function () {
+            assert(escodes.isEmail("leiquan@live.com"))
         });
     });
 
     describe('#isIdCard()', function () {
-        it('outils.isIdCard("622224188203234033") should return true ', function () {
-            assert(outils.isIdCard("622224188203234033"))
+        it('escodes.isIdCard("622224188203234033") should return true ', function () {
+            assert(escodes.isIdCard("622224188203234033"))
         });
-        it('outils.isIdCard("zas224188203234033") should return false', function () {
-            assert(!outils.isIdCard("leiquan@live.com"))
+        it('escodes.isIdCard("zas224188203234033") should return false', function () {
+            assert(!escodes.isIdCard("leiquan@live.com"))
         });
     });
 
     describe('#isPhoneNum()', function () {
-        it('outils.isPhoneNum("18882324234") should return true ', function () {
-            assert(outils.isPhoneNum("18882324234"))
+        it('escodes.isPhoneNum("18882324234") should return true ', function () {
+            assert(escodes.isPhoneNum("18882324234"))
         });
-        it('outils.isPhoneNum("8618882324234") should return true ', function () {
-            assert(outils.isPhoneNum("8618882324234"))
+        it('escodes.isPhoneNum("8618882324234") should return true ', function () {
+            assert(escodes.isPhoneNum("8618882324234"))
         });
-        it('outils.isPhoneNum("5534553") should return false', function () {
-            assert(!outils.isPhoneNum("5534553"))
+        it('escodes.isPhoneNum("5534553") should return false', function () {
+            assert(!escodes.isPhoneNum("5534553"))
         });
     });
 
     describe('#isUrl()', function () {
-        it('outils.isUrl("https://www.baidu.com/s?wd=www.slane.cn&rsv_spt=1") should return true ', function () {
-            assert(outils.isUrl("https://www.baidu.com/s?wd=www.slane.cn&rsv_spt=1"))
+        it('escodes.isUrl("https://www.baidu.com/s?wd=www.slane.cn&rsv_spt=1") should return true ', function () {
+            assert(escodes.isUrl("https://www.baidu.com/s?wd=www.slane.cn&rsv_spt=1"))
         });
-        it('outils.isUrl("http://www.baidu.com/s?wd=www.slane.cn&rsv_spt=1") should return true ', function () {
-            assert(outils.isUrl("http://www.baidu.com/s?wd=www.slane.cn&rsv_spt=1"))
+        it('escodes.isUrl("http://www.baidu.com/s?wd=www.slane.cn&rsv_spt=1") should return true ', function () {
+            assert(escodes.isUrl("http://www.baidu.com/s?wd=www.slane.cn&rsv_spt=1"))
         });
-        it('outils.isUrl("www.baidu.com") should return true', function () {
-            assert(outils.isUrl("www.baidu.com"))
+        it('escodes.isUrl("www.baidu.com") should return true', function () {
+            assert(escodes.isUrl("www.baidu.com"))
         });
-        it('outils.isUrl("baidu.com") should return true', function () {
-            assert(outils.isUrl("baidu.com"))
+        it('escodes.isUrl("baidu.com") should return true', function () {
+            assert(escodes.isUrl("baidu.com"))
         });
-        it('outils.isUrl("http://baiducom") should return false', function () {
-            assert(!outils.isUrl("http://baiducom"))
+        it('escodes.isUrl("http://baiducom") should return false', function () {
+            assert(!escodes.isUrl("http://baiducom"))
         });
     });
 

@@ -1,6 +1,6 @@
 describe('Object API:', function () {
     describe('#deepClone()', function () {
-        it(`person deepEqual outils.deepClone(person) should return true`, function () {
+        it(`person deepEqual escodes.deepClone(person) should return true`, function () {
             let person = {
                 name: "user",
                 settings: {
@@ -8,10 +8,10 @@ describe('Object API:', function () {
                     second: [1, 2, 3, 4, 3]
                 }
             }
-            assert.deepEqual(person, outils.deepClone(person))
+            assert.deepEqual(person, escodes.deepClone(person))
         });
 
-        it(`person === outils.deepClone(person) should return false`, function () {
+        it(`person === escodes.deepClone(person) should return false`, function () {
             let person = {
                 name: "user",
                 settings: {
@@ -19,23 +19,23 @@ describe('Object API:', function () {
                     second: [1, 2, 3, 4, 3]
                 }
             }
-            assert.notEqual(person, outils.deepClone(person))
+            assert.notEqual(person, escodes.deepClone(person))
         });
     });
 
     describe('#isEmptyObject()', function () {
-        it(`outils.isEmptyObject({}) should return true`, function () {
-            assert(outils.deepClone({}))
+        it(`escodes.isEmptyObject({}) should return true`, function () {
+            assert(escodes.deepClone({}))
         });
 
-        it(`outils.isEmptyObject({ one: 1 }) should return false`, function () {
-            assert.notEqual(outils.isEmptyObject({
+        it(`escodes.isEmptyObject({ one: 1 }) should return false`, function () {
+            assert.notEqual(escodes.isEmptyObject({
                 one: 1
             }))
         });
 
-        it(`outils.isEmptyObject([]) should return false`, function () {
-            assert.notEqual(outils.isEmptyObject([]))
+        it(`escodes.isEmptyObject([]) should return false`, function () {
+            assert.notEqual(escodes.isEmptyObject([]))
         });
     });
 })

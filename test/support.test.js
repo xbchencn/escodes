@@ -1,7 +1,7 @@
 describe('Support API:', function () {
     describe('#isSupportWebP()', function () {
-        it(`outils.isSupportWebP() should return true`, function () {
-            assert(outils.isSupportWebP())
+        it(`escodes.isSupportWebP() should return true`, function () {
+            assert(escodes.isSupportWebP())
         });
     });
 })
